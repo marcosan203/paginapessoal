@@ -35,8 +35,8 @@ body{
 
 /***********************main*********************/
 .content{
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-bottom: 20px;
     
 }
@@ -86,11 +86,15 @@ body{
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 
 }
+.imagem{
+    display: flex;
+    justify-content: center;
+}
 .imagem-perfil{
-    width: 300px;
+    width: 320px ;
     height: auto;
     border-radius: 3%;
 }
@@ -219,4 +223,66 @@ form textarea {
     /*Largura não pulou a area ocupada*/
     width: 100%;
 
+}
+
+@media (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: #051726;
+        padding-top: 50px;
+    
+    }
+    .content{
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        
+    }
+    .descricaoObjetivo{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .area-sobre-objetivo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2%;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+ 
+    .projeto{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #5185A6;
+        border-radius: 3%;
+    }
+    .projeto-item{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+    }
+    .contato{
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
 }
